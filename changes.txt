@@ -500,3 +500,19 @@ v1.3.1 - Dark Mode, bug fixes
 
 - Dark mode is now available! See the Options menu to toggle between light mode and dark mode.
 - Fixed some bugs (Schleicher's Schemes, achievement condition)
+
+v1.3.2 - Anders als die Andern
+
+- Added a new achievement - Anders als die Andern (homosexuals will join the Reichsbanner)
+- Some bugfixes (thanks to the contributors on github - wonkwtb, cghobson, socdemtestmode)
+
+Future updates:
+
+I hope to release the game on Steam this year - wishlist the game at https://store.steampowered.com/app/3083910/Social_Democracy_An_Alternate_History/
+
+Future game updates:
+- better mod loading
+- achievement compatibility with Steam, cloud saves
+
+Potential future game changes (nothing guaranteed):
+- 
