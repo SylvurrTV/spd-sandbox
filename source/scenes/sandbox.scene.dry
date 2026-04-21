@@ -1128,12 +1128,12 @@ go-to: editpartysupport
 @spd_supportraise
 go-to: editpartysupport
 on-arrival: {!
-Q.workers_spd += 20;
-Q.old_middle_spd += 20;
-Q.new_middle_spd += 20;
-Q.rural_spd += 20;
-Q.unemployed_spd += 20;
-Q.catholics_spd += 20;
+Q.workers_spd += 10;
+Q.old_middle_spd += 10;
+Q.new_middle_spd += 10;
+Q.rural_spd += 10;
+Q.unemployed_spd += 10;
+Q.catholics_spd += 10;
 !}
 
 Raised support for SPD.
@@ -1141,12 +1141,12 @@ Raised support for SPD.
 @spd_supportlower
 go-to: editpartysupport
 on-arrival: {!
-Q.workers_spd -= 20;
-Q.old_middle_spd -= 20;
-Q.new_middle_spd -= 20;
-Q.rural_spd -= 20;
-Q.unemployed_spd -= 20;
-Q.catholics_spd -= 20;
+Q.workers_spd -= 10;
+Q.old_middle_spd -= 10;
+Q.new_middle_spd -= 10;
+Q.rural_spd -= 10;
+Q.unemployed_spd -= 10;
+Q.catholics_spd -= 10;
 !}
 
 Lowered support for SPD.
@@ -1155,12 +1155,12 @@ Lowered support for SPD.
 view-if: sapd_formed == 1
 go-to: editpartysupport
 on-arrival: {!
-Q.workers_sapd += 20;
-Q.old_middle_sapd += 20;
-Q.new_middle_sapd += 20;
-Q.rural_sapd += 20;
-Q.unemployed_sapd += 20;
-Q.catholics_sapd += 20;
+Q.workers_sapd += 10;
+Q.old_middle_sapd += 10;
+Q.new_middle_sapd += 10;
+Q.rural_sapd += 10;
+Q.unemployed_sapd += 10;
+Q.catholics_sapd += 10;
 !}
 
 Raised support for SAPD.
@@ -1169,12 +1169,12 @@ Raised support for SAPD.
 view-if: sapd_formed == 1
 go-to: editpartysupport
 on-arrival: {!
-Q.workers_sapd -= 20;
-Q.old_middle_sapd -= 20;
-Q.new_middle_sapd -= 20;
-Q.rural_sapd -= 20;
-Q.unemployed_sapd -= 20;
-Q.catholics_sapd -= 20;
+Q.workers_sapd -= 10;
+Q.old_middle_sapd -= 10;
+Q.new_middle_sapd -= 10;
+Q.rural_sapd -= 10;
+Q.unemployed_sapd -= 10;
+Q.catholics_sapd -= 10;
 !}
 
 Lowered support for SAPD.
@@ -1182,12 +1182,12 @@ Lowered support for SAPD.
 @center_supportraise
 go-to: editpartysupport
 on-arrival: {!
-Q.workers_z += 20;
-Q.old_middle_z += 20;
-Q.new_middle_z += 20;
-Q.rural_z += 20;
-Q.unemployed_z += 20;
-Q.catholics_z += 20;
+Q.workers_z += 10;
+Q.old_middle_z += 10;
+Q.new_middle_z += 10;
+Q.rural_z += 10;
+Q.unemployed_z += 10;
+Q.catholics_z += 10;
 !}
 
 Raised support for Center.
@@ -1195,12 +1195,12 @@ Raised support for Center.
 @center_supportlower
 go-to: editpartysupport
 on-arrival: {!
-Q.workers_z -= 20;
-Q.old_middle_z -= 20;
-Q.new_middle_z -= 20;
-Q.rural_z -= 20;
-Q.unemployed_z -= 20;
-Q.catholics_z -= 20;
+Q.workers_z -= 10;
+Q.old_middle_z -= 10;
+Q.new_middle_z -= 10;
+Q.rural_z -= 10;
+Q.unemployed_z -= 10;
+Q.catholics_z -= 10;
 !}
 
 Lowered support for Center.
@@ -1208,12 +1208,12 @@ Lowered support for Center.
 @kpd_supportraise
 go-to: editpartysupport
 on-arrival: {!
-Q.workers_kpd += 20;
-Q.old_middle_kpd += 20;
-Q.new_middle_kpd += 20;
-Q.rural_kpd += 20;
-Q.unemployed_kpd += 20;
-Q.catholics_kpd += 20;
+Q.workers_kpd += 10;
+Q.old_middle_kpd += 10;
+Q.new_middle_kpd += 10;
+Q.rural_kpd += 10;
+Q.unemployed_kpd += 10;
+Q.catholics_kpd += 10;
 !}
 
 Raised support for KPD.
@@ -1221,12 +1221,12 @@ Raised support for KPD.
 @kpd_supportlower
 go-to: editpartysupport
 on-arrival: {!
-Q.workers_kpd -= 20;
-Q.old_middle_kpd -= 20;
-Q.new_middle_kpd -= 20;
-Q.rural_kpd -= 20;
-Q.unemployed_kpd -= 20;
-Q.catholics_kpd -= 20;
+Q.workers_kpd -= 10;
+Q.old_middle_kpd -= 10;
+Q.new_middle_kpd -= 10;
+Q.rural_kpd -= 10;
+Q.unemployed_kpd -= 10;
+Q.catholics_kpd -= 10;
 !}
 
 Lowered support for KPD.
@@ -1234,12 +1234,12 @@ Lowered support for KPD.
 @ddp_supportraise
 go-to: editpartysupport
 on-arrival: {!
-Q.workers_ddp += 20;
-Q.old_middle_ddp += 20;
-Q.new_middle_ddp += 20;
-Q.rural_ddp += 20;
-Q.unemployed_ddp += 20;
-Q.catholics_ddp += 20;
+Q.workers_ddp += 10;
+Q.old_middle_ddp += 10;
+Q.new_middle_ddp += 10;
+Q.rural_ddp += 10;
+Q.unemployed_ddp += 10;
+Q.catholics_ddp += 10;
 !}
 
 Raised support for DDP.
@@ -1247,12 +1247,12 @@ Raised support for DDP.
 @ddp_supportlower
 go-to: editpartysupport
 on-arrival: {!
-Q.workers_ddp -= 20;
-Q.old_middle_ddp -= 20;
-Q.new_middle_ddp -= 20;
-Q.rural_ddp -= 20;
-Q.unemployed_ddp -= 20;
-Q.catholics_ddp -= 20;
+Q.workers_ddp -= 10;
+Q.old_middle_ddp -= 10;
+Q.new_middle_ddp -= 10;
+Q.rural_ddp -= 10;
+Q.unemployed_ddp -= 10;
+Q.catholics_ddp -= 10;
 !}
 
 Lowered support for DDP.
@@ -1260,12 +1260,12 @@ Lowered support for DDP.
 @dvp_supportraise
 go-to: editpartysupport
 on-arrival: {!
-Q.workers_dvp += 20;
-Q.old_middle_dvp += 20;
-Q.new_middle_dvp += 20;
-Q.rural_dvp += 20;
-Q.unemployed_dvp += 20;
-Q.catholics_dvp += 20;
+Q.workers_dvp += 10;
+Q.old_middle_dvp += 10;
+Q.new_middle_dvp += 10;
+Q.rural_dvp += 10;
+Q.unemployed_dvp += 10;
+Q.catholics_dvp += 10;
 !}
 
 Raised support for DVP.
@@ -1273,12 +1273,12 @@ Raised support for DVP.
 @dvp_supportlower
 go-to: editpartysupport
 on-arrival: {!
-Q.workers_dvp -= 20;
-Q.old_middle_dvp -= 20;
-Q.new_middle_dvp -= 20;
-Q.rural_dvp -= 20;
-Q.unemployed_dvp -= 20;
-Q.catholics_dvp -= 20;
+Q.workers_dvp -= 10;
+Q.old_middle_dvp -= 10;
+Q.new_middle_dvp -= 10;
+Q.rural_dvp -= 10;
+Q.unemployed_dvp -= 10;
+Q.catholics_dvp -= 10;
 !}
 
 Lowered support for DVP.
@@ -1286,12 +1286,12 @@ Lowered support for DVP.
 @dnvp_supportraise
 go-to: editpartysupport
 on-arrival: {!
-Q.workers_dnvp += 20;
-Q.old_middle_dnvp += 20;
-Q.new_middle_dnvp += 20;
-Q.rural_dnvp += 20;
-Q.unemployed_dnvp += 20;
-Q.catholics_dnvp += 20;
+Q.workers_dnvp += 10;
+Q.old_middle_dnvp += 10;
+Q.new_middle_dnvp += 10;
+Q.rural_dnvp += 10;
+Q.unemployed_dnvp += 10;
+Q.catholics_dnvp += 10;
 !}
 
 Raised support for DNVP.
@@ -1299,12 +1299,12 @@ Raised support for DNVP.
 @dnvp_supportlower
 go-to: editpartysupport
 on-arrival: {!
-Q.workers_dnvp -= 20;
-Q.old_middle_dnvp -= 20;
-Q.new_middle_dnvp -= 20;
-Q.rural_dnvp -= 20;
-Q.unemployed_dnvp -= 20;
-Q.catholics_dnvp -= 20;
+Q.workers_dnvp -= 10;
+Q.old_middle_dnvp -= 10;
+Q.new_middle_dnvp -= 10;
+Q.rural_dnvp -= 10;
+Q.unemployed_dnvp -= 10;
+Q.catholics_dnvp -= 10;
 !}
 
 Lowered support for DNVP.
@@ -1312,12 +1312,12 @@ Lowered support for DNVP.
 @nsdap_supportraise
 go-to: editpartysupport
 on-arrival: {!
-Q.workers_nsdap += 20;
-Q.old_middle_nsdap += 20;
-Q.new_middle_nsdap += 20;
-Q.rural_nsdap += 20;
-Q.unemployed_nsdap += 20;
-Q.catholics_nsdap += 20;
+Q.workers_nsdap += 10;
+Q.old_middle_nsdap += 10;
+Q.new_middle_nsdap += 10;
+Q.rural_nsdap += 10;
+Q.unemployed_nsdap += 10;
+Q.catholics_nsdap += 10;
 !}
 
 Raised support for NSDAP.
@@ -1325,12 +1325,12 @@ Raised support for NSDAP.
 @nsdap_supportlower
 go-to: editpartysupport
 on-arrival: {!
-Q.workers_nsdap -= 20;
-Q.old_middle_nsdap -= 20;
-Q.new_middle_nsdap -= 20;
-Q.rural_nsdap -= 20;
-Q.unemployed_nsdap -= 20;
-Q.catholics_nsdap -= 20;
+Q.workers_nsdap -= 10;
+Q.old_middle_nsdap -= 10;
+Q.new_middle_nsdap -= 10;
+Q.rural_nsdap -= 10;
+Q.unemployed_nsdap -= 10;
+Q.catholics_nsdap -= 10;
 !}
 
 Lowered support for NSDAP.
@@ -1338,12 +1338,12 @@ Lowered support for NSDAP.
 @other_supportraise
 go-to: editpartysupport
 on-arrival: {!
-Q.workers_other += 20;
-Q.old_middle_other += 20;
-Q.new_middle_other += 20;
-Q.rural_other += 20;
-Q.unemployed_other += 20;
-Q.catholics_other += 20;
+Q.workers_other += 10;
+Q.old_middle_other += 10;
+Q.new_middle_other += 10;
+Q.rural_other += 10;
+Q.unemployed_other += 10;
+Q.catholics_other += 10;
 !}
 
 Raised support for Other.
@@ -1351,12 +1351,12 @@ Raised support for Other.
 @other_supportlower
 go-to: editpartysupport
 on-arrival: {!
-Q.workers_other -= 20;
-Q.old_middle_other -= 20;
-Q.new_middle_other -= 20;
-Q.rural_other -= 20;
-Q.unemployed_other -= 20;
-Q.catholics_other -= 20;
+Q.workers_other -= 10;
+Q.old_middle_other -= 10;
+Q.new_middle_other -= 10;
+Q.rural_other -= 10;
+Q.unemployed_other -= 10;
+Q.catholics_other -= 10;
 !}
 
 Lowered support for Other.
