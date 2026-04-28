@@ -15,12 +15,12 @@ go-to: sandbox_menu
 - @editeconomy: Edit Economy
 - @editrelations: Edit Party Relations
 - @editpartysupport: Edit Party Support
+- @editelectoral: Edit Electoral Threshold
 - @editfactions: Edit SPD Factions
 - @miscparty: Miscellaneous Party Options
 - @editironfront: Edit Iron Front
 - @editparamilitary: Edit Paramilitary Groups
 - @editreichswehr: Edit Reichswehr and Police
-- @editelectoral: Edit Electoral Threshold
 - @root: Exit Sandbox Menu
 
 @disable_end
