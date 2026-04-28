@@ -12,6 +12,7 @@ go-to: sandbox_menu
 - @enable_end: Enable End In 1934
 - @editresources: Edit Resources
 - @editbudget: Edit Budget
+- @editeconomy: Edit Economy
 - @editrelations: Edit Party Relations
 - @editpartysupport: Edit Party Support
 - @editfactions: Edit SPD Factions
@@ -19,6 +20,7 @@ go-to: sandbox_menu
 - @editironfront: Edit Iron Front
 - @editparamilitary: Edit Paramilitary Groups
 - @editreichswehr: Edit Reichswehr and Police
+- @editelectoral: Edit Electoral Threshold
 - @root: Exit Sandbox Menu
 
 @disable_end
@@ -34,6 +36,55 @@ on-arrival: end_disabled = 0
 go-to: sandbox_menu
 
 The end date has been enabled.
+
+@editelectoral
+
+- @electoral0: Set Electoral Threshold to 0% (Default)
+- @electoral5: Set Electoral Threshold to 5%
+- @electoral10: Set Electoral Threshold to 10%
+- @electoral20: Set Electoral Threshold to 20%
+- @electoral40: Set Electoral Threshold to 40%
+- @returnsandbox: Return To Sandbox
+
+@electoral0
+go-to: sandbox_menu
+on-arrival: {!
+Q.electoral_threshold = 0;
+!}
+
+Set electoral threshold to 0%.
+
+@electoral5
+go-to: sandbox_menu
+on-arrival: {!
+Q.electoral_threshold = 5;
+!}
+
+Set electoral threshold to 5%.
+
+@electoral10
+go-to: sandbox_menu
+on-arrival: {!
+Q.electoral_threshold = 10;
+!}
+
+Set electoral threshold to 10%.
+
+@electoral20
+go-to: sandbox_menu
+on-arrival: {!
+Q.electoral_threshold = 20;
+!}
+
+Set electoral threshold to 20%.
+
+@electoral40
+go-to: sandbox_menu
+on-arrival: {!
+Q.electoral_threshold = 40;
+!}
+
+Set electoral threshold to 40%.
 
 @editfactions
 
@@ -159,6 +210,82 @@ Q.budget -= 100;
 !}
 
 Removed 100 budget from the country's stockpile. This doesn't go to the homeless or anything, why would you do this?
+
+@editeconomy
+
+- @increasegrowth: Increase Economic Growth by 5%
+- @decreasegrowth: Decrease Economic Growth by 5%
+- @increaseinflation: Increase Inflation by 5%
+- @decreaseinflation: Decrease Inflation by 5%
+- @increaseunemployment: Increase Unemployment by 5%
+- @decreaseunemployment: Decrease Unemployment by 5%
+- @increasescience: Increase Science by 1
+- @decreasescience: Decrease Science by 1
+- @returnsandbox: Return To Sandbox Menu
+
+@increasegrowth
+go-to: editeconomy
+on-arrival: {!
+Q.economic_growth += 5;
+!}
+
+Increased economic growth by 5%.
+
+@decreasegrowth
+go-to: editeconomy
+on-arrival: {!
+Q.economic_growth -= 5;
+!}
+
+Decreased economic growth by 5%.
+
+@increaseinflation
+go-to: editeconomy
+on-arrival: {!
+Q.inflation += 5;
+!}
+
+Increased inflation by 5%.
+
+@decreaseinflation
+go-to: editeconomy
+on-arrival: {!
+Q.inflation -= 5;
+!}
+
+Decreased inflation by 5%.
+
+@increaseunemployment
+go-to: editeconomy
+on-arrival: {!
+Q.unemployed += 5;
+!}
+
+Increased unemployment by 5%.
+
+@decreaseunemployment
+go-to: editeconomy
+on-arrival: {!
+Q.unemployed -= 5;
+!}
+
+Decreased unemployment by 5%.
+
+@increasescience
+go-to: editeconomy
+on-arrival: {!
+Q.science += 1;
+!}
+
+Increased science by 1.
+
+@decreasescience
+go-to: editeconomy
+on-arrival: {!
+Q.science -= 1;
+!}
+
+Decreased science by 1.
 
 @editrelations
 
