@@ -10,10 +10,12 @@ go-to: sandbox_menu
 
 - @disable_end: Disable End In 1934
 - @enable_end: Enable End In 1934
+- @clear_hand: Clear Cards
+- @make_adv_available: Make Advisors Available
 - @editresources: Edit Resources
 - @editbudget: Edit Budget
 - @editeconomy: Edit Economy
-- @editrelations: Edit Party Relations
+- @editrelations: Edit Party Relations & Coalition Dissent
 - @editpartysupport: Edit Party Support
 - @editelectoral: Edit Electoral Threshold
 - @editfactions: Edit SPD Factions
@@ -21,7 +23,7 @@ go-to: sandbox_menu
 - @editironfront: Edit Iron Front
 - @editparamilitary: Edit Paramilitary Groups
 - @editreichswehr: Edit Reichswehr and Police
-- @root: Exit Sandbox Menu
+- @backSpecialScene: Exit Sandbox Menu
 
 @disable_end
 view-if: end_disabled != 1
@@ -36,6 +38,26 @@ on-arrival: end_disabled = 0
 go-to: sandbox_menu
 
 The end date has been enabled.
+
+@clear_hand
+go-to: sandbox_menu
+on-arrival: {!
+Q.advisor_action_timer = 6;
+if (Q.difficulty >= 0) {
+    window.dendryUI.dendryEngine.state.currentHands['main'] = [];
+} else {
+    window.dendryUI.dendryEngine.state.currentHands['main.main_easy'] = [];
+!}
+
+Cleared all cards.
+
+@make_adv_available
+go-to: sandbox_menu
+on-arrival: {!
+Q.advisor_action_timer = 0;
+!}
+
+Made advisor actions available.
 
 @editelectoral
 
@@ -312,11 +334,25 @@ Decreased science by 1.
 - @decreaseddprel: Decrease Relations With The DDP/DStP
 - @increasedvprel: Increase Relations With The DVP
 - @decreasedvprel: Decrease Relations With The DVP
-- @increasednvprel: Increase Relations With The DNVP (Doesn't Work)
-- @decreasednvprel: Decrease Relations With The DNVP (Doesn't Work)
-- @increasensdaprel: Increase Relations With The NSDAP (Doesn't Work)
-- @decreasensdaprel: Decrease Relations With The NSDAP (Doesn't Work)
+- @removedissent: Remove Coalition Dissent
+- @maxdissent: Maximise Coalition Dissent
 - @returnsandbox: Return To Sandbox Menu
+
+@removedissent
+go-to: editrelations
+on-arrival: {!
+Q.coalition_dissent = 0;
+!}
+
+Removed coalition dissent.
+
+@maxdissent
+go-to: editrelations
+on-arrival: {!
+Q.coalition_dissent = 5;
+!}
+
+Removed coalition dissent.
 
 @increasecenterrel
 go-to: editrelations
