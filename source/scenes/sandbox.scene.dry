@@ -47,7 +47,7 @@ if (Q.difficulty >= 0) {
     window.dendryUI.dendryEngine.state.currentHands['main'] = [];
 } else {
     window.dendryUI.dendryEngine.state.currentHands['main.main_easy'] = [];
-!}
+}
 !}
 
 Cleared all cards.
