@@ -1222,7 +1222,7 @@ Lowered Interior Police loyalty.
 - @unban_kpd: Unban KPD
 - @ban_nsdap: Ban NSDAP
 - @unban_nsdap: Unban NSDAP
-- @form_sapd: Form SAPD (Requires High Internal Dissent)
+- @sapd_formed: Form SAPD
 - @returnsandbox: Return To Sandbox Menu
 
 @allow_banning
@@ -1269,15 +1269,6 @@ Q.nsdap_banned = 0;
 !}
 
 Unbanned the NSDAP.
-
-@form_sapd
-go-to: miscparty
-view-if: sapd_formed == 0
-on-arrival: {!
-Q.sapd_formed = 1;
-!}
-
-Formed the SAPD.
 
 @editpartysupport
 
