@@ -1554,9 +1554,6 @@ Lowered support for Other.
 - @other_support: Edit Other Support
 - @returnsandbox: Return To Sandbox Menu
 
-@returnpartysupport
-go-to: editpartysupport
-
 @spd_support
 
 - @spd_worker_up: Increase SPD Worker Support
