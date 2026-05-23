@@ -31,5 +31,5 @@
 
 It's been a while since I added this, so if you find any files that I also added that to, please send a pull request to edit these docs!
 
-7. If the mod you are using this with has different parties or completely different variables/scenes, you will have to edit the sandbox.scene.dry file to ensure it works correctly. I cannot you with that in this tutorial, it is up to you to learn.
-8. When all of that is done, publish the entire local repository on github. You may need to link the Github workflow .yaml file to the Github Actions service, which will build a website for you. But first, in the repository settings, go to Pages and select your source as Github Actions. When all is done, it should work as a website!
+7. If the mod you are using this with has different parties or completely different variables/scenes, you will have to edit the sandbox.scene.dry file to ensure it works correctly. I cannot help you with that in this tutorial, it is up to you to learn.
+8. When all of that is done, publish the entire local repository on github. In the repository settings, go to Pages and select your source as Github Actions. When all is done, it should work as a website!
