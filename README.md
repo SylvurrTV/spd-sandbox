@@ -2,8 +2,10 @@
 ## Original Game
 [Social Democracy](https://red-autumn.itch.io/social-democracy/)
 
-## How To Use With Other Mods
 ---
+
+## How To Use With Other Mods
+
 (This tutorial will assume you know how to use Github Desktop and Github Pages, and also very basic html/js structure)
 
 1. Find the repository of the mod you want to use, for example [Redux](https://github.com/CuttleCraft/social_democracy_redux/) and download it to your computer.
