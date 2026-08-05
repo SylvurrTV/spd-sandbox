@@ -97,7 +97,7 @@ The [+ ddp_name +] has been one of our closest allies through the course of the 
 @dvp_stresemann
 on-arrival: dvp_relation += 8*(1 - dissent)
 
-Gustav Stresemann, the leader of the DVP is the best foreign policy leaders of the republic, and while he has previously expressed monarchist tendencies, he has been friendly towards us.
+Gustav Stresemann, the leader of the DVP, is one of the best foreign policy leaders of the republic, and while he has previously expressed monarchist tendencies, he has been friendly towards us.
 
 @dvp_loss
 on-arrival: dvp_relation += 5*(1 - dissent)
