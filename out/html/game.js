@@ -50,6 +50,52 @@
         window.dendryUI.dendryEngine.goToScene('mod_loader');
     }
   };
+
+  // TODO: update audio displays
+  window.updateAudio = function(song) {
+      var now_playing = document.getElementById('currently_playing');
+      if (song) {
+          var a = song.split('/');
+          now_playing.textContent = a[a.length-1];
+      } else {
+          var s = window.dendryUI.currentAudioURL;
+          var a = s.split('/');
+          now_playing.textContent = a[a.length-1];
+      }
+  };
+
+  // sets the volume
+  window.setVolume = function(volume) {
+      if (window.dendryUI.currentAudio) {
+          window.dendryUI.volume = volume/100;
+          window.dendryUI.currentAudio.volume = volume/100;
+      }
+  };
+
+  // go to the next song - this just sets the time to 9999 lol.
+  window.shuffle = function() {
+      if (window.dendryUI.currentAudio) {
+          window.dendryUI.currentAudio.currentTime = 9999;
+      }
+  };
+
+  // toggles pause or play of music
+  window.togglePausePlay = function() {
+      if (window.dendryUI.currentAudio) {
+          if (window.dendryUI.currentAudio.paused) {
+            window.dendryUI.currentAudio.play();
+            document.getElementById('pause-button-image').style.display = "inline";
+            document.getElementById('play-button-image').style.display = "none";
+            document.getElementById('pause-button');
+            document.getElementById('pause-button-text').textContent = "Pause";
+          } else {
+            window.dendryUI.currentAudio.pause();
+            document.getElementById('play-button-image').style.display = "inline";
+            document.getElementById('pause-button-image').style.display = "none";
+            document.getElementById('pause-button-text').textContent = "Play";
+          }
+      }
+  };
   
   window.showOptions = function() {
       var save_element = document.getElementById('options');
@@ -254,11 +300,38 @@
   window.dendryModifyUI = main;
   console.log("Modifying stats: see dendryUI.dendryEngine.state.qualities");
 
+  window.increaseFontSize = function() {
+        window.dendryUI.font_size += 0.1;
+        var fs = window.dendryUI.font_size;
+        var sidebar_fs = fs - 0.1;
+        document.getElementById("content").setAttribute("style", "font-size: " + fs + "em;");
+        document.getElementById("stats_sidebar").setAttribute("style", "font-size: " + sidebar_fs + "em;");
+        document.getElementById('font_size_value').textContent = window.dendryUI.font_size.toFixed(1) + "em";
+        window.dendryUI.saveSettings();
+  }
+
+  window.decreaseFontSize = function() {
+        window.dendryUI.font_size -= 0.1;
+        var fs = window.dendryUI.font_size;
+        var sidebar_fs = fs - 0.1;
+        document.getElementById("content").setAttribute("style", "font-size: " + fs + "em;");
+        document.getElementById("stats_sidebar").setAttribute("style", "font-size: " + sidebar_fs + "em;");
+        document.getElementById('font_size_value').textContent = window.dendryUI.font_size.toFixed(1) + "em";
+        window.dendryUI.saveSettings();
+  }
+
   window.onload = function() {
     window.dendryUI.loadSettings({show_portraits: false});
     if (window.dendryUI.dark_mode) {
         document.body.classList.add('dark-mode');
     }
+    if (window.dendryUI.font_size != 1.1) {
+        var fs = window.dendryUI.font_size;
+        var sidebar_fs = fs - 0.1;
+        document.getElementById("content").setAttribute("style", "font-size: " + fs + "em;");
+        document.getElementById("stats_sidebar").setAttribute("style", "font-size: " + sidebar_fs + "em;");
+    }
+    document.getElementById('font_size_value').textContent = window.dendryUI.font_size.toFixed(1) + "em";
     window.pinnedCardsDescription = "Advisor cards - actions are only usable once per 6 months.";
   };
 
